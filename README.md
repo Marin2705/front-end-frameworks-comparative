@@ -21,6 +21,7 @@ npm run dev
 
 ```sh
 npm init @angular angular-project
-
+cd angular-project
+npm start
 
 ```
