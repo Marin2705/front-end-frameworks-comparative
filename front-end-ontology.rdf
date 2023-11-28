@@ -37,8 +37,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#framework"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer"/>
     </owl:ObjectProperty>
     
 
@@ -98,7 +97,9 @@
 
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer"/>
+    </owl:Class>
     
 
 
@@ -122,9 +123,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer"/>
+    
+
+
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer"/>
+    </owl:Class>
     
 
 
