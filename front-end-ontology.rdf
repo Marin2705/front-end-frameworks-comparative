@@ -51,7 +51,17 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#usedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#usedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     </owl:ObjectProperty>
     
 
@@ -137,9 +147,7 @@
 
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     
 
 
@@ -160,19 +168,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer">
-        <rdfs:comment>who is responsible for maintaining the framework (developing and publishing updates)</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainer"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person"/>
     
 
 
@@ -208,6 +206,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Adobe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Adobe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Airbnb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Airbnb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Angular -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Angular">
@@ -215,6 +229,12 @@
         <owl:sameAs rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#AngularJS"/>
         <front-end-ontology:basedOn rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#TypeScript"/>
         <front-end-ontology:maintainedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Google"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Google"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#IBM"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Microsoft"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Paypal"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Rockstar_Games"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Samsung"/>
         <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#MVC"/>
         <front-end-ontology:createdIn rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2010</front-end-ontology:createdIn>
         <front-end-ontology:documentation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://angular.io/guide/setup-local</front-end-ontology:documentation>
@@ -238,6 +258,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Evan_You -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Evan_You">
@@ -257,6 +285,22 @@
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Google -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#IBM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#IBM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Instagram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Instagram">
         <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     </owl:NamedIndividual>
     
@@ -305,6 +349,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Netflix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Netflix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Nintendo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Nintendo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Paypal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Paypal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#React -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#React">
@@ -313,6 +389,14 @@
         <front-end-ontology:basedOn rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JavaScript"/>
         <front-end-ontology:isA rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application"/>
         <front-end-ontology:maintainedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Facebook"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Airbnb"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Facebook"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Instagram"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Netflix"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Sony"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Uber"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#WhatsApp"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Yahoo"/>
         <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JSX"/>
         <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Virtual_DOM"/>
         <front-end-ontology:createdIn rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2013</front-end-ontology:createdIn>
@@ -337,11 +421,35 @@
     
 
 
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Rockstar_Games -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Rockstar_Games">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Samsung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Samsung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application">
         <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology"/>
         <front-end-ontology:name>Single Page Application</front-end-ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Sony -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Sony">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     </owl:NamedIndividual>
     
 
@@ -370,12 +478,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Trustpilot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Trustpilot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#TypeScript -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#TypeScript">
         <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#programming_language"/>
         <front-end-ontology:documentation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html</front-end-ontology:documentation>
         <front-end-ontology:name>TypeScript</front-end-ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Uber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Uber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     </owl:NamedIndividual>
     
 
@@ -398,6 +522,10 @@
         <front-end-ontology:basedOn rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JavaScript"/>
         <front-end-ontology:isA rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application"/>
         <front-end-ontology:maintainedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Evan_You"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Adobe"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Apple"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Nintendo"/>
+        <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Trustpilot"/>
         <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Virtual_DOM"/>
         <front-end-ontology:createdIn rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2014</front-end-ontology:createdIn>
         <front-end-ontology:documentation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://vuejs.org/guide/quick-start.html#creating-a-vue-application</front-end-ontology:documentation>
@@ -438,6 +566,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#VueJS">
         <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#WhatsApp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#WhatsApp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Yahoo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Yahoo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     </owl:NamedIndividual>
     
 
