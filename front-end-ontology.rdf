@@ -32,20 +32,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#is -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#is">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#isA -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#isA"/>
-    
-
-
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainedBy">
@@ -61,6 +47,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#usedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     </owl:ObjectProperty>
     
@@ -71,7 +58,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#uses">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
     </owl:ObjectProperty>
     
 
@@ -100,6 +87,7 @@
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#documentation -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#documentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#programming_language"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -111,6 +99,17 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#name">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#numberOfJobs2022 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#numberOfJobs2022">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -123,14 +122,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment>Percentage of job offers for front-end developer positions that required React in 2022. Indicates the popularity of the framework among companies.</rdfs:comment>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </rdf:Description>
     
 
 
@@ -151,18 +142,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#component -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#component">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_development"/>
         <rdfs:comment>frameworks used for front-end development (front-end is a specific domain of web development that consists in building the client side part of an application, including the user interface)</rdfs:comment>
     </owl:Class>
     
@@ -180,18 +162,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology -->
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_development"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology">
         <rdfs:comment>technology used in web development</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_development -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_development"/>
     
 
 
@@ -239,6 +214,7 @@
         <front-end-ontology:createdIn rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2010</front-end-ontology:createdIn>
         <front-end-ontology:documentation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://angular.io/guide/setup-local</front-end-ontology:documentation>
         <front-end-ontology:name>Angular</front-end-ontology:name>
+        <front-end-ontology:numberOfJobs2022 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">211386</front-end-ontology:numberOfJobs2022>
         <front-end-ontology:popularityByJobOffers2022 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33</front-end-ontology:popularityByJobOffers2022>
     </owl:NamedIndividual>
     
@@ -262,6 +238,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Apple">
         <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Components -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Components">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
+        <front-end-ontology:name>Components</front-end-ontology:name>
     </owl:NamedIndividual>
     
 
@@ -324,7 +309,7 @@
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JSX -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JSX">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
         <front-end-ontology:name>JavaScript XML</front-end-ontology:name>
     </owl:NamedIndividual>
     
@@ -343,7 +328,7 @@
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#MVC -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#MVC">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
         <front-end-ontology:name>Model Vue Controller architecture</front-end-ontology:name>
     </owl:NamedIndividual>
     
@@ -387,7 +372,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
         <owl:sameAs rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#ReactJS"/>
         <front-end-ontology:basedOn rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JavaScript"/>
-        <front-end-ontology:isA rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application"/>
         <front-end-ontology:maintainedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Facebook"/>
         <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Airbnb"/>
         <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Facebook"/>
@@ -397,11 +381,13 @@
         <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Uber"/>
         <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#WhatsApp"/>
         <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Yahoo"/>
+        <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Components"/>
         <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JSX"/>
         <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Virtual_DOM"/>
         <front-end-ontology:createdIn rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2013</front-end-ontology:createdIn>
         <front-end-ontology:documentation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://react.dev/learn</front-end-ontology:documentation>
         <front-end-ontology:name>React</front-end-ontology:name>
+        <front-end-ontology:numberOfJobs2022 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">354596</front-end-ontology:numberOfJobs2022>
         <front-end-ontology:popularityByJobOffers2022 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56</front-end-ontology:popularityByJobOffers2022>
     </owl:NamedIndividual>
     
@@ -440,7 +426,7 @@
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
         <front-end-ontology:name>Single Page Application</front-end-ontology:name>
     </owl:NamedIndividual>
     
@@ -507,7 +493,7 @@
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Virtual_DOM -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Virtual_DOM">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#technology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
         <front-end-ontology:name>Virtual DOM</front-end-ontology:name>
     </owl:NamedIndividual>
     
@@ -520,7 +506,6 @@
         <owl:sameAs rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Vue.js"/>
         <owl:sameAs rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#VueJS"/>
         <front-end-ontology:basedOn rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JavaScript"/>
-        <front-end-ontology:isA rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Single_Page_Application"/>
         <front-end-ontology:maintainedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Evan_You"/>
         <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Adobe"/>
         <front-end-ontology:usedBy rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Apple"/>
@@ -530,6 +515,7 @@
         <front-end-ontology:createdIn rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2014</front-end-ontology:createdIn>
         <front-end-ontology:documentation rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://vuejs.org/guide/quick-start.html#creating-a-vue-application</front-end-ontology:documentation>
         <front-end-ontology:name>Vue</front-end-ontology:name>
+        <front-end-ontology:numberOfJobs2022 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64456</front-end-ontology:numberOfJobs2022>
         <front-end-ontology:popularityByJobOffers2022 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</front-end-ontology:popularityByJobOffers2022>
     </owl:NamedIndividual>
     
@@ -583,52 +569,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#Yahoo">
         <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#angularComponent -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#angularComponent">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#component"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#reactComponent -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#reactComponent">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#component"/>
-        <front-end-ontology:uses rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#JSX"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#vueComponent -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#vueComponent">
-        <rdf:type rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#component"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#programming_language"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_development"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
