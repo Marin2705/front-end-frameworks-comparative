@@ -145,6 +145,36 @@
     <!-- http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#front-end_framework">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#basedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#programming_language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#maintainedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#usedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#uses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marin/ontologies/2023/10/front-end-ontology#web_technology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>frameworks used for front-end development (front-end is a specific domain of web development that consists in building the client side part of an application, including the user interface)</rdfs:comment>
     </owl:Class>
     
