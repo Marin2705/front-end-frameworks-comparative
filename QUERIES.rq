@@ -1,0 +1,23 @@
+#Retrieve all individuals and their associated organizations that are "usedBy."
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ont: <http://www.semanticweb.org/marin/ontologies/2023/11/front-end-frameworks-v3#>
+
+SELECT ?framework ?organization
+WHERE {
+  ?framework rdf:type ont:Front-end_Framework.
+  ?framework ont:usedBy ?organization.
+}
+
+
+#retrieve all makers of a front end framework
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ont: <http://www.semanticweb.org/marin/ontologies/2023/11/front-end-frameworks-v3#>
+
+SELECT DISTINCT ?maker
+WHERE {
+  ?framework rdf:type ont:Front-end_Framework.
+  ?maker foaf:maker ?framework.
+}

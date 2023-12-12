@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/marin/ontologies/2023/11/front-end-frameworks-v3">
+    <Prefix name="" IRI="http://www.semanticweb.org/marin/ontologies/2023/11/front-end-frameworks-v3"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -72,6 +73,21 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Adobe"/>
     </Declaration>
     <Declaration>
@@ -87,10 +103,19 @@
         <NamedIndividual IRI="#Apple"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CSS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evan_You"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Facebook"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Google"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HTML"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#IBM"/>
@@ -99,7 +124,16 @@
         <NamedIndividual IRI="#Instagram"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#JSX"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#JavaScript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MIT_License"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Microsoft"/>
@@ -145,21 +179,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Yahoo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CSS"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HTML"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#JSX"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MIT"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MIT_License"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Application"/>
@@ -246,6 +265,14 @@
         <Class IRI="#Stylesheet_Language"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Adobe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Airbnb"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Front-end_Framework"/>
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
@@ -254,16 +281,36 @@
         <NamedIndividual IRI="#AngularJS"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Apple"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Stylesheet_Language"/>
         <NamedIndividual IRI="#CSS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <NamedIndividual IRI="#Evan_You"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Facebook"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Google"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Markup_Language"/>
         <NamedIndividual IRI="#HTML"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#IBM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Instagram"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Syntax"/>
@@ -282,34 +329,6 @@
         <NamedIndividual IRI="#MIT_License"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Front-end_Framework"/>
-        <NamedIndividual IRI="#React"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Front-end_Framework"/>
-        <NamedIndividual IRI="#Svelte"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Front-end_Framework"/>
-        <NamedIndividual IRI="#VueJS"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
-        <NamedIndividual IRI="#Facebook"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
-        <NamedIndividual IRI="#Google"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
-        <NamedIndividual IRI="#IBM"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
-        <NamedIndividual IRI="#Instagram"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Microsoft"/>
     </ClassAssertion>
@@ -326,6 +345,10 @@
         <NamedIndividual IRI="#Paypal"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#React"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Rockstar_Games"/>
     </ClassAssertion>
@@ -338,12 +361,20 @@
         <NamedIndividual IRI="#Sony"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#Svelte"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Trustpilot"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Uber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#VueJS"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
@@ -353,6 +384,134 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Yahoo"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Google"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#IBM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Paypal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Rockstar_Games"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Samsung"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Evan_You"/>
+        <NamedIndividual IRI="#VueJS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Facebook"/>
+        <NamedIndividual IRI="#React"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#AngularJS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Airbnb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Facebook"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Instagram"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Sony"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Uber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#WhatsApp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Yahoo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Adobe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Apple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Nintendo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Trustpilot"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Evan_You"/>
+        <Literal>Evan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <NamedIndividual IRI="#Evan_You"/>
+        <Literal>You</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
 </Ontology>
 
 
