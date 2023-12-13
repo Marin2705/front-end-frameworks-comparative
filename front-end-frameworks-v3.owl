@@ -34,16 +34,19 @@
         <Class IRI="#Front-end_Framework"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Interface"/>
+        <Class IRI="#Front-end_Programming_Concept"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#JavaScript_Library"/>
+        <Class IRI="#Interface"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Markup_Language"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Permissive_Software_License"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming_Concept"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Programming_Language"/>
@@ -112,6 +115,9 @@
         <ObjectProperty IRI="#hasSyntax"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#implements"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#usedBy"/>
     </Declaration>
     <Declaration>
@@ -160,6 +166,9 @@
         <NamedIndividual IRI="#DOM"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Django"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Evan_You"/>
     </Declaration>
     <Declaration>
@@ -184,6 +193,9 @@
         <NamedIndividual IRI="#JavaScript"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Laravel"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MIT"/>
     </Declaration>
     <Declaration>
@@ -202,7 +214,13 @@
         <NamedIndividual IRI="#Nintendo"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#PHP"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Paypal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Python"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#React"/>
@@ -223,6 +241,9 @@
         <NamedIndividual IRI="#Svelte"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Symfony"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Trustpilot"/>
     </Declaration>
     <Declaration>
@@ -230,6 +251,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Uber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Virtual_DOM"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#VueJS"/>
@@ -265,8 +289,8 @@
         <Class IRI="#Web_Framework"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#JavaScript_Library"/>
-        <Class IRI="#Software_Library"/>
+        <Class IRI="#Front-end_Programming_Concept"/>
+        <Class IRI="#Programming_Concept"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Markup_Language"/>
@@ -370,11 +394,15 @@
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#JavaScript_Library"/>
+        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
+        <Class IRI="#Software_Framework"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -382,11 +410,11 @@
         <NamedIndividual IRI="#AngularJS"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#JavaScript_Library"/>
+        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#AngularJS"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
+        <Class IRI="#Software_Library"/>
         <NamedIndividual IRI="#AngularJS"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -404,6 +432,14 @@
     <ClassAssertion>
         <Class IRI="#Application_Programming_Interface"/>
         <NamedIndividual IRI="#DOM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#Django"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Web_Framework"/>
+        <NamedIndividual IRI="#Django"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
@@ -438,6 +474,14 @@
         <NamedIndividual IRI="#JavaScript"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#Laravel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Web_Framework"/>
+        <NamedIndividual IRI="#Laravel"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#MIT"/>
     </ClassAssertion>
@@ -462,19 +506,27 @@
         <NamedIndividual IRI="#Nintendo"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Programming_Language"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Paypal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programming_Language"/>
+        <NamedIndividual IRI="#Python"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Front-end_Framework"/>
         <NamedIndividual IRI="#React"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#JavaScript_Library"/>
+        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#React"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
+        <Class IRI="#Software_Library"/>
         <NamedIndividual IRI="#React"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -498,12 +550,16 @@
         <NamedIndividual IRI="#Svelte"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#JavaScript_Library"/>
+        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#Svelte"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
-        <NamedIndividual IRI="#Svelte"/>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#Symfony"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Web_Framework"/>
+        <NamedIndividual IRI="#Symfony"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
@@ -518,15 +574,19 @@
         <NamedIndividual IRI="#Uber"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Front-end_Programming_Concept"/>
+        <NamedIndividual IRI="#Virtual_DOM"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Front-end_Framework"/>
         <NamedIndividual IRI="#VueJS"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#JavaScript_Library"/>
+        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#VueJS"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
+        <Class IRI="#Software_Library"/>
         <NamedIndividual IRI="#VueJS"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -583,6 +643,11 @@
         <NamedIndividual IRI="#Samsung"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#AngularJS"/>
+        <NamedIndividual IRI="#TypeScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasArchitecture"/>
         <NamedIndividual IRI="#AngularJS"/>
         <NamedIndividual IRI="#MVC"/>
@@ -596,6 +661,11 @@
         <ObjectProperty IRI="#userOf"/>
         <NamedIndividual IRI="#Apple"/>
         <NamedIndividual IRI="#VueJS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#Django"/>
+        <NamedIndividual IRI="#Python"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
@@ -633,6 +703,11 @@
         <NamedIndividual IRI="#React"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#Laravel"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
         <NamedIndividual IRI="#MIT"/>
         <NamedIndividual IRI="#MIT_License"/>
@@ -643,9 +718,19 @@
         <NamedIndividual IRI="#VueJS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSyntax"/>
         <NamedIndividual IRI="#React"/>
         <NamedIndividual IRI="#JSX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#implements"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Virtual_DOM"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#usedBy"/>
@@ -693,6 +778,11 @@
         <NamedIndividual IRI="#Svelte"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#Symfony"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#userOf"/>
         <NamedIndividual IRI="#Trustpilot"/>
         <NamedIndividual IRI="#VueJS"/>
@@ -701,6 +791,16 @@
         <ObjectProperty IRI="#basedOn"/>
         <NamedIndividual IRI="#TypeScript"/>
         <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#implements"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Virtual_DOM"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#usedBy"/>
@@ -807,6 +907,20 @@
         <NamedIndividual IRI="#VueJS"/>
         <Literal>Vue</Literal>
     </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#usedBy"/>
+        <ObjectProperty IRI="#userOf"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#usedBy"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#userOf"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasArchitecture"/>
         <Class IRI="#Software_Framework"/>
@@ -823,6 +937,18 @@
         <ObjectProperty IRI="#hasSyntax"/>
         <Class IRI="#Software_Framework"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Software_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Programming_Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasArchitecture"/>
         <Class IRI="#Software_Architecture_Pattern"/>
@@ -835,9 +961,13 @@
         <ObjectProperty IRI="#hasSyntax"/>
         <Class IRI="#Syntax"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Programming_Concept"/>
+    </ObjectPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
