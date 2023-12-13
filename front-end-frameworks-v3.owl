@@ -352,35 +352,6 @@
         <Class IRI="#Website"/>
         <Class IRI="#Software"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Application"/>
-        <Class IRI="#Programming_tool"/>
-        <Class IRI="#Software_Framework"/>
-        <Class IRI="#Website"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Back-end_Framework"/>
-        <Class IRI="#Front-end_Framework"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Computer_Language"/>
-        <Class IRI="#Permissive_Software_License"/>
-        <Class IRI="#Software"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Computer_Language"/>
-        <Class IRI="#Software"/>
-        <Class IRI="#Software_Design_Pattern"/>
-        <Class IRI="#Software_License"/>
-        <Class IRI="#Syntax"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Markup_Language"/>
-        <Class IRI="#Programming_Language"/>
-        <Class IRI="#Stylesheet_Language"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Adobe"/>
@@ -598,16 +569,6 @@
         <NamedIndividual IRI="#Yahoo"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#userOf"/>
-        <NamedIndividual IRI="#Adobe"/>
-        <NamedIndividual IRI="#VueJS"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#userOf"/>
-        <NamedIndividual IRI="#Airbnb"/>
-        <NamedIndividual IRI="#React"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#basedOn"/>
         <NamedIndividual IRI="#Angular"/>
         <NamedIndividual IRI="#AngularJS"/>
@@ -658,11 +619,6 @@
         <NamedIndividual IRI="#Apache_License_2.0"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#userOf"/>
-        <NamedIndividual IRI="#Apple"/>
-        <NamedIndividual IRI="#VueJS"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#basedOn"/>
         <NamedIndividual IRI="#Django"/>
         <NamedIndividual IRI="#Python"/>
@@ -671,11 +627,6 @@
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
         <NamedIndividual IRI="#Evan_You"/>
         <NamedIndividual IRI="#VueJS"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#userOf"/>
-        <NamedIndividual IRI="#Facebook"/>
-        <NamedIndividual IRI="#React"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
@@ -698,11 +649,6 @@
         <NamedIndividual IRI="#AngularJS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#userOf"/>
-        <NamedIndividual IRI="#Instagram"/>
-        <NamedIndividual IRI="#React"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#basedOn"/>
         <NamedIndividual IRI="#Laravel"/>
         <NamedIndividual IRI="#PHP"/>
@@ -711,11 +657,6 @@
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
         <NamedIndividual IRI="#MIT"/>
         <NamedIndividual IRI="#MIT_License"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#userOf"/>
-        <NamedIndividual IRI="#Nintendo"/>
-        <NamedIndividual IRI="#VueJS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#basedOn"/>
@@ -781,11 +722,6 @@
         <ObjectProperty IRI="#basedOn"/>
         <NamedIndividual IRI="#Symfony"/>
         <NamedIndividual IRI="#PHP"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#userOf"/>
-        <NamedIndividual IRI="#Trustpilot"/>
-        <NamedIndividual IRI="#VueJS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#basedOn"/>
@@ -911,12 +847,6 @@
         <ObjectProperty IRI="#usedBy"/>
         <ObjectProperty IRI="#userOf"/>
     </InverseObjectProperties>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#usedBy"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#userOf"/>
-    </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#basedOn"/>
         <Class IRI="#Software"/>
