@@ -94,9 +94,6 @@
         <Class IRI="#Webapp"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Website"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
     </Declaration>
     <Declaration>
@@ -367,14 +364,6 @@
     <SubClassOf>
         <Class IRI="#Webapp"/>
         <Class IRI="#Application"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Webapp"/>
-        <Class IRI="#Website"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Website"/>
-        <Class IRI="#Software"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
