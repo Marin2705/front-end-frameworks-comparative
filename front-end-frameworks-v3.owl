@@ -136,6 +136,12 @@
         <DataProperty IRI="#alsoKnownAs"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#dbpediaURI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wikidataURI"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
     </Declaration>
     <Declaration>
@@ -900,6 +906,16 @@
         <DataProperty IRI="#alsoKnownAs"/>
         <NamedIndividual IRI="#React"/>
         <Literal>ReactJS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dbpediaURI"/>
+        <NamedIndividual IRI="#React"/>
+        <Literal>https://dbpedia.org/resource/React_(web_framework)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikidataURI"/>
+        <NamedIndividual IRI="#React"/>
+        <Literal>https://www.wikidata.org/wiki/Q19399674</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
