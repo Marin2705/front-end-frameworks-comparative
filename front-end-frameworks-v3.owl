@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/marin/ontologies/2023/11/front-end-frameworks-v3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/marin/ontologies/2023/11/front-end-frameworks-v3">
+    <Prefix name="" IRI="http://www.semanticweb.org/marin/ontologies/2023/11/front-end-frameworks-v3"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Application_Programming_Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Back-end_Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Back-end_Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Front-end_Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Front-end_Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Front-end_Programming_Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Markup_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Permissive_Software_License"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming_Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming_tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proprietary_Software_License"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restrictive_Software_License"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Single_Page_Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software_Architecture_Pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software_Design_Pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software_Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software_Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software_License"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stylesheet_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Syntax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web_Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webapp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Website"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArchitecture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLicense"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSyntax"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implements"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#userOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alsoKnownAs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adobe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Airbnb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AngularJS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apache_License_2.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CSS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DOM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Django"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evan_You"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Facebook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Google"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HTML"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IBM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Instagram"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JSX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JavaScript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laravel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MIT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MIT_License"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MVC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microsoft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netflix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nintendo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PHP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paypal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#React"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rich_Harris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rockstar_Games"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samsung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sony"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Svelte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Symfony"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trustpilot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TypeScript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Virtual_DOM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VueJS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WhatsApp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yahoo"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Application"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Application_Programming_Interface"/>
+        <Class IRI="#Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Back-end_Application"/>
+        <Class IRI="#Webapp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Back-end_Framework"/>
+        <Class IRI="#Web_Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Front-end_Application"/>
+        <Class IRI="#Webapp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Front-end_Framework"/>
+        <Class IRI="#Web_Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Front-end_Programming_Concept"/>
+        <Class IRI="#Programming_Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Markup_Language"/>
+        <Class IRI="#Computer_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Permissive_Software_License"/>
+        <Class IRI="#Software_License"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programming_Language"/>
+        <Class IRI="#Computer_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programming_tool"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proprietary_Software_License"/>
+        <Class IRI="#Software_License"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restrictive_Software_License"/>
+        <Class IRI="#Software_License"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Single_Page_Application"/>
+        <Class IRI="#Front-end_Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software_Architecture_Pattern"/>
+        <Class IRI="#Software_Design_Pattern"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software_Framework"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software_Library"/>
+        <Class IRI="#Programming_tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stylesheet_Language"/>
+        <Class IRI="#Computer_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web_Framework"/>
+        <Class IRI="#Software_Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webapp"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webapp"/>
+        <Class IRI="#Website"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Website"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Adobe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Airbnb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Framework"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#AngularJS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#AngularJS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#AngularJS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Permissive_Software_License"/>
+        <NamedIndividual IRI="#Apache_License_2.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Apple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stylesheet_Language"/>
+        <NamedIndividual IRI="#CSS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Application_Programming_Interface"/>
+        <NamedIndividual IRI="#DOM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#Django"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Web_Framework"/>
+        <NamedIndividual IRI="#Django"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <NamedIndividual IRI="#Evan_You"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Facebook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Google"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Markup_Language"/>
+        <NamedIndividual IRI="#HTML"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#IBM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Instagram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Syntax"/>
+        <NamedIndividual IRI="#JSX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programming_Language"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#Laravel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Web_Framework"/>
+        <NamedIndividual IRI="#Laravel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#MIT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Permissive_Software_License"/>
+        <NamedIndividual IRI="#MIT_License"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Architecture_Pattern"/>
+        <NamedIndividual IRI="#MVC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Nintendo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programming_Language"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Paypal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programming_Language"/>
+        <NamedIndividual IRI="#Python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#React"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#React"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#React"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <NamedIndividual IRI="#Rich_Harris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Rockstar_Games"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Samsung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Sony"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#Svelte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#Svelte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#Symfony"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Web_Framework"/>
+        <NamedIndividual IRI="#Symfony"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Trustpilot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programming_Language"/>
+        <NamedIndividual IRI="#TypeScript"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Uber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Front-end_Programming_Concept"/>
+        <NamedIndividual IRI="#Virtual_DOM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Front-end_Framework"/>
+        <NamedIndividual IRI="#VueJS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#VueJS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software_Library"/>
+        <NamedIndividual IRI="#VueJS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#WhatsApp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Yahoo"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#AngularJS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Google"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#IBM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Paypal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Rockstar_Games"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#Angular"/>
+        <NamedIndividual IRI="#Samsung"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#AngularJS"/>
+        <NamedIndividual IRI="#TypeScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArchitecture"/>
+        <NamedIndividual IRI="#AngularJS"/>
+        <NamedIndividual IRI="#MVC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Apache"/>
+        <NamedIndividual IRI="#Apache_License_2.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#Django"/>
+        <NamedIndividual IRI="#Python"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Evan_You"/>
+        <NamedIndividual IRI="#VueJS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Facebook"/>
+        <NamedIndividual IRI="#JSX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Facebook"/>
+        <NamedIndividual IRI="#React"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#AngularJS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#Laravel"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#MIT"/>
+        <NamedIndividual IRI="#MIT_License"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSyntax"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#JSX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#implements"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Virtual_DOM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Airbnb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Facebook"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Instagram"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Sony"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Uber"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#WhatsApp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Yahoo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Rich_Harris"/>
+        <NamedIndividual IRI="#Svelte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#Symfony"/>
+        <NamedIndividual IRI="#PHP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#TypeScript"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#basedOn"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#JavaScript"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#implements"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Virtual_DOM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Adobe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Apple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Nintendo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <NamedIndividual IRI="#Trustpilot"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+        <NamedIndividual IRI="#Angular"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#Angular"/>
+        <Literal>Angular 2+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+        <NamedIndividual IRI="#AngularJS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#AngularJS"/>
+        <Literal>Angular 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#Apache"/>
+        <Literal>Apache Software Foundation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#DOM"/>
+        <Literal>Document Object Model</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Evan_You"/>
+        <Literal>Evan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <NamedIndividual IRI="#Evan_You"/>
+        <Literal>You</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#JSX"/>
+        <Literal>JavaScript Syntax Extension, JavaScript XML</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#MIT"/>
+        <Literal>Massachusetts Institute of Technology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#MVC"/>
+        <Literal>Model-View-Controller</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+        <NamedIndividual IRI="#React"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#React"/>
+        <Literal>ReactJS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Rich_Harris"/>
+        <Literal>Rich</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <NamedIndividual IRI="#Rich_Harris"/>
+        <Literal>Harris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+        <NamedIndividual IRI="#Svelte"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alsoKnownAs"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <Literal>Vue</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#usedBy"/>
+        <ObjectProperty IRI="#userOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArchitecture"/>
+        <Class IRI="#Software_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLicense"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSyntax"/>
+        <Class IRI="#Computer_Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSyntax"/>
+        <Class IRI="#Software_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Software_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Programming_Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArchitecture"/>
+        <Class IRI="#Software_Architecture_Pattern"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLicense"/>
+        <Class IRI="#Software_License"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSyntax"/>
+        <Class IRI="#Syntax"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Programming_Concept"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
