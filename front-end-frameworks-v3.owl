@@ -19,16 +19,13 @@
         <Class IRI="#Application_Programming_Interface"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Back-end_Application"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Back-end_Framework"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Computer_Language"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Front-end_Application"/>
+        <Class IRI="#Desktop_App"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Front-end_Framework"/>
@@ -41,6 +38,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Markup_Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobile_App"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multiple_Page_Application"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Permissive_Software_License"/>
@@ -88,10 +91,10 @@
         <Class IRI="#Syntax"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Web_Framework"/>
+        <Class IRI="#Web_App"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Webapp"/>
+        <Class IRI="#Web_Framework"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
@@ -294,16 +297,12 @@
         <Class IRI="#Interface"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Back-end_Application"/>
-        <Class IRI="#Webapp"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Back-end_Framework"/>
         <Class IRI="#Web_Framework"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Front-end_Application"/>
-        <Class IRI="#Webapp"/>
+        <Class IRI="#Desktop_App"/>
+        <Class IRI="#Application"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Front-end_Framework"/>
@@ -316,6 +315,14 @@
     <SubClassOf>
         <Class IRI="#Markup_Language"/>
         <Class IRI="#Computer_Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobile_App"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multiple_Page_Application"/>
+        <Class IRI="#Web_App"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Permissive_Software_License"/>
@@ -339,7 +346,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Single_Page_Application"/>
-        <Class IRI="#Front-end_Application"/>
+        <Class IRI="#Web_App"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Software_Architecture_Pattern"/>
@@ -358,12 +365,12 @@
         <Class IRI="#Computer_Language"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Web_Framework"/>
-        <Class IRI="#Software_Framework"/>
+        <Class IRI="#Web_App"/>
+        <Class IRI="#Application"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Webapp"/>
-        <Class IRI="#Application"/>
+        <Class IRI="#Web_Framework"/>
+        <Class IRI="#Software_Framework"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
@@ -986,6 +993,12 @@
         <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Web_App</IRI>
+        <Literal>a webapp is an application accessible online, from a website
+(e.g. a Software as a Service is a webapp)</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
