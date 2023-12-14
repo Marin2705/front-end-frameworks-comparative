@@ -118,6 +118,9 @@
         <ObjectProperty IRI="#implements"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#ownedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#usedBy"/>
     </Declaration>
     <Declaration>
@@ -178,6 +181,12 @@
         <NamedIndividual IRI="#Google"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GoogleAdWords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GoogleFiber"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#HTML"/>
     </Declaration>
     <Declaration>
@@ -205,10 +214,16 @@
         <NamedIndividual IRI="#MVC"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Meta"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Microsoft"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Netflix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netflix.com"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Nintendo"/>
@@ -368,10 +383,6 @@
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
-        <NamedIndividual IRI="#Angular"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Software_Framework"/>
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
@@ -381,10 +392,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Front-end_Framework"/>
-        <NamedIndividual IRI="#AngularJS"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#AngularJS"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -420,12 +427,20 @@
         <NamedIndividual IRI="#Evan_You"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#Facebook"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Google"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#GoogleAdWords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#GoogleFiber"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Markup_Language"/>
@@ -436,7 +451,7 @@
         <NamedIndividual IRI="#IBM"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#Instagram"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -469,11 +484,19 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Meta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Microsoft"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Netflix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Page_Application"/>
+        <NamedIndividual IRI="#Netflix.com"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
@@ -493,10 +516,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Front-end_Framework"/>
-        <NamedIndividual IRI="#React"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#React"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -528,10 +547,6 @@
         <NamedIndividual IRI="#Svelte"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
-        <NamedIndividual IRI="#Svelte"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Software_Library"/>
         <NamedIndividual IRI="#Symfony"/>
     </ClassAssertion>
@@ -557,10 +572,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Front-end_Framework"/>
-        <NamedIndividual IRI="#VueJS"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Single_Page_Application"/>
         <NamedIndividual IRI="#VueJS"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -636,12 +647,12 @@
         <NamedIndividual IRI="#VueJS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <ObjectProperty IRI="#ownedBy"/>
         <NamedIndividual IRI="#Facebook"/>
-        <NamedIndividual IRI="#JSX"/>
+        <NamedIndividual IRI="#Meta"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <ObjectProperty IRI="#userOf"/>
         <NamedIndividual IRI="#Facebook"/>
         <NamedIndividual IRI="#React"/>
     </ObjectPropertyAssertion>
@@ -656,6 +667,36 @@
         <NamedIndividual IRI="#AngularJS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownedBy"/>
+        <NamedIndividual IRI="#GoogleAdWords"/>
+        <NamedIndividual IRI="#Google"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#userOf"/>
+        <NamedIndividual IRI="#GoogleAdWords"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownedBy"/>
+        <NamedIndividual IRI="#GoogleFiber"/>
+        <NamedIndividual IRI="#Google"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#userOf"/>
+        <NamedIndividual IRI="#GoogleFiber"/>
+        <NamedIndividual IRI="#Angular"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownedBy"/>
+        <NamedIndividual IRI="#Instagram"/>
+        <NamedIndividual IRI="#Meta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#userOf"/>
+        <NamedIndividual IRI="#Instagram"/>
+        <NamedIndividual IRI="#React"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#basedOn"/>
         <NamedIndividual IRI="#Laravel"/>
         <NamedIndividual IRI="#PHP"/>
@@ -664,6 +705,31 @@
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
         <NamedIndividual IRI="#MIT"/>
         <NamedIndividual IRI="#MIT_License"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#userOf"/>
+        <NamedIndividual IRI="#Meta"/>
+        <NamedIndividual IRI="#React"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Meta"/>
+        <NamedIndividual IRI="#JSX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <NamedIndividual IRI="#Meta"/>
+        <NamedIndividual IRI="#React"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownedBy"/>
+        <NamedIndividual IRI="#Netflix.com"/>
+        <NamedIndividual IRI="#Netflix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#userOf"/>
+        <NamedIndividual IRI="#Netflix.com"/>
+        <NamedIndividual IRI="#React"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#basedOn"/>
@@ -699,6 +765,11 @@
         <ObjectProperty IRI="#usedBy"/>
         <NamedIndividual IRI="#React"/>
         <NamedIndividual IRI="#Netflix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedBy"/>
+        <NamedIndividual IRI="#React"/>
+        <NamedIndividual IRI="#Netflix.com"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#usedBy"/>
@@ -850,6 +921,10 @@
         <NamedIndividual IRI="#VueJS"/>
         <Literal>Vue</Literal>
     </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ownedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#usedBy"/>
         <ObjectProperty IRI="#userOf"/>
@@ -878,6 +953,10 @@
         <ObjectProperty IRI="#implements"/>
         <Class IRI="#Software_Framework"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#Application"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#basedOn"/>
         <Class IRI="#Programming_Language"/>
@@ -901,6 +980,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#implements"/>
         <Class IRI="#Programming_Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
     </ObjectPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
