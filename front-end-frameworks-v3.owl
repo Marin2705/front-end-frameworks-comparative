@@ -383,10 +383,6 @@
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Software_Framework"/>
-        <NamedIndividual IRI="#Angular"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Software_Library"/>
         <NamedIndividual IRI="#Angular"/>
     </ClassAssertion>
@@ -934,20 +930,12 @@
         <ObjectProperty IRI="#userOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#basedOn"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasArchitecture"/>
         <Class IRI="#Software_Framework"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLicense"/>
         <Class IRI="#Software"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSyntax"/>
-        <Class IRI="#Computer_Language"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSyntax"/>
@@ -961,14 +949,6 @@
         <ObjectProperty IRI="#ownedBy"/>
         <Class IRI="#Application"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#basedOn"/>
-        <Class IRI="#Programming_Language"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#basedOn"/>
-        <Class IRI="#Software"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasArchitecture"/>
         <Class IRI="#Software_Architecture_Pattern"/>
