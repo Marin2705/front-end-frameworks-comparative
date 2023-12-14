@@ -232,6 +232,9 @@
         <NamedIndividual IRI="#Rockstar_Games"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#SASS"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Samsung"/>
     </Declaration>
     <Declaration>
@@ -507,6 +510,10 @@
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
         <NamedIndividual IRI="#Rockstar_Games"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stylesheet_Language"/>
+        <NamedIndividual IRI="#SASS"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
