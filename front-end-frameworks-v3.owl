@@ -399,6 +399,10 @@
         <NamedIndividual IRI="#AngularJS"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <NamedIndividual IRI="#Apache"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Permissive_Software_License"/>
         <NamedIndividual IRI="#Apache_License_2.0"/>
     </ClassAssertion>
