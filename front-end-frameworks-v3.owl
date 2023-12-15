@@ -353,10 +353,6 @@
         <Class IRI="#Software_Design_Pattern"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Software_Framework"/>
-        <Class IRI="#Software"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Software_Library"/>
         <Class IRI="#Programming_tool"/>
     </SubClassOf>
@@ -849,6 +845,16 @@
         <Literal>Angular 2+</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#dbpediaURI"/>
+        <NamedIndividual IRI="#Angular"/>
+        <Literal>https://dbpedia.org/page/Angular_(web_framework)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikidataURI"/>
+        <NamedIndividual IRI="#Angular"/>
+        <Literal>https://www.wikidata.org/wiki/Q28925578</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
         <NamedIndividual IRI="#AngularJS"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
@@ -857,6 +863,16 @@
         <DataProperty IRI="#alsoKnownAs"/>
         <NamedIndividual IRI="#AngularJS"/>
         <Literal>Angular 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dbpediaURI"/>
+        <NamedIndividual IRI="#AngularJS"/>
+        <Literal>https://dbpedia.org/page/AngularJS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikidataURI"/>
+        <NamedIndividual IRI="#AngularJS"/>
+        <Literal>https://www.wikidata.org/wiki/Q2849803</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#alsoKnownAs"/>
@@ -929,9 +945,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#wikidataURI"/>
+        <NamedIndividual IRI="#Svelte"/>
+        <Literal>https://www.wikidata.org/wiki/Q16863097</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#alsoKnownAs"/>
         <NamedIndividual IRI="#VueJS"/>
         <Literal>Vue</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dbpediaURI"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <Literal>https://dbpedia.org/page/Vue.js</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wikidataURI"/>
+        <NamedIndividual IRI="#VueJS"/>
+        <Literal>https://www.wikidata.org/wiki/Q24589705</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#ownedBy"/>
@@ -993,6 +1024,25 @@
         <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Single_Page_Application</IRI>
+        <Literal>&quot;A single-page application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current web page with new data from the web server, instead of the default method of a web browser loading entire new pages. The goal is faster transitions that make the website feel more like a native app.&quot;
+https://www.wikidata.org/wiki/Q1990286</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Software_Framework</IRI>
+        <Literal>&quot;A software framework [...] provides a standard way to build and deploy applications and is a universal, reusable software environment that provides particular functionality as part of a larger software platform to facilitate the development of software applications.
+It provides a standard way to build and deploy applications and is a universal, reusable software environment that provides particular functionality as part of a larger software platform to facilitate the development of software applications&quot;
+https://en.wikipedia.org/wiki/Software_framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Software_Library</IRI>
+        <Literal>&quot;collection of non-volatile resources used by computer programs, often for software development&quot;
+https://www.wikidata.org/wiki/Q188860</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Web_App</IRI>
