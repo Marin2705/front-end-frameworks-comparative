@@ -309,6 +309,9 @@
     <Declaration>
         <NamedIndividual IRI="https://dbpedia.org/page/Vue.js"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="http://dbpedia.org/ontology/Software"/>
         <Class IRI="#Software"/>
@@ -1101,6 +1104,51 @@
         <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Application"/>
+                <Variable IRI="#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Software_Framework"/>
+                <Variable IRI="#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ownedBy"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#x"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#userOf"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#userOf"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Single_Page_Application</IRI>
