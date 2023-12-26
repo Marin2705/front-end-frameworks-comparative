@@ -154,7 +154,7 @@
         <DataProperty IRI="http://xmlns.com/foaf/0.1/surname"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dbpedia.org/resource/Angular"/>
@@ -906,12 +906,12 @@
         <NamedIndividual IRI="#Evan_You"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Adobe"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29239</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Airbnb"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6811</Literal>
     </DataPropertyAssertion>
@@ -961,7 +961,7 @@
         <Literal>Apache Software Foundation</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Apple"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">164000</Literal>
     </DataPropertyAssertion>
@@ -981,7 +981,7 @@
         <Literal>You</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Google"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">156500</Literal>
     </DataPropertyAssertion>
@@ -1001,27 +1001,27 @@
         <Literal>Model-View-Controller</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Meta"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">86482</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Microsoft"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">238000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Netflix"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12800</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Nintendo"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7317</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Paypal"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29900</Literal>
     </DataPropertyAssertion>
@@ -1056,17 +1056,17 @@
         <Literal>Harris</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Rockstar_Games"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6235</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Samsung"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">270372</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Sony"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">113000</Literal>
     </DataPropertyAssertion>
@@ -1081,12 +1081,12 @@
         <Literal>https://www.wikidata.org/wiki/Q16863097</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Trustpilot"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Uber"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32800</Literal>
     </DataPropertyAssertion>
@@ -1106,7 +1106,7 @@
         <Literal>https://www.wikidata.org/wiki/Q24589705</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Yahoo"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8500</Literal>
     </DataPropertyAssertion>
@@ -1171,7 +1171,7 @@
         <Class IRI="#Software_Framework"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
     </DataPropertyDomain>
     <DataPropertyRange>
@@ -1187,7 +1187,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#numberOfEmployees"/>
+        <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <Datatype abbreviatedIRI="xsd:positiveInteger"/>
     </DataPropertyRange>
     <DLSafeRule>
