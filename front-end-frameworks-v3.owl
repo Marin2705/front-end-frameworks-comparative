@@ -142,12 +142,6 @@
         <DataProperty IRI="#alsoKnownAs"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#dbpediaURI"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#wikidataURI"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
     </Declaration>
     <Declaration>
@@ -926,16 +920,6 @@
         <Literal>Angular 2+</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#dbpediaURI"/>
-        <NamedIndividual IRI="#Angular"/>
-        <Literal>https://dbpedia.org/page/Angular_(web_framework)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#wikidataURI"/>
-        <NamedIndividual IRI="#Angular"/>
-        <Literal>https://www.wikidata.org/wiki/Q28925578</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/dc/elements/1.1/created"/>
         <NamedIndividual IRI="#AngularJS"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
@@ -944,16 +928,6 @@
         <DataProperty IRI="#alsoKnownAs"/>
         <NamedIndividual IRI="#AngularJS"/>
         <Literal>Angular 1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#dbpediaURI"/>
-        <NamedIndividual IRI="#AngularJS"/>
-        <Literal>https://dbpedia.org/page/AngularJS</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#wikidataURI"/>
-        <NamedIndividual IRI="#AngularJS"/>
-        <Literal>https://www.wikidata.org/wiki/Q2849803</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#alsoKnownAs"/>
@@ -1036,16 +1010,6 @@
         <Literal>ReactJS</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#dbpediaURI"/>
-        <NamedIndividual IRI="#React"/>
-        <Literal>https://dbpedia.org/resource/React_(web_framework)</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#wikidataURI"/>
-        <NamedIndividual IRI="#React"/>
-        <Literal>https://www.wikidata.org/wiki/Q19399674</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
         <NamedIndividual IRI="#Rich_Harris"/>
         <Literal>Rich</Literal>
@@ -1076,11 +1040,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#wikidataURI"/>
-        <NamedIndividual IRI="#Svelte"/>
-        <Literal>https://www.wikidata.org/wiki/Q16863097</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/numberOfEmployees"/>
         <NamedIndividual IRI="#Trustpilot"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
@@ -1094,16 +1053,6 @@
         <DataProperty IRI="#alsoKnownAs"/>
         <NamedIndividual IRI="#VueJS"/>
         <Literal>Vue</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#dbpediaURI"/>
-        <NamedIndividual IRI="#VueJS"/>
-        <Literal>https://dbpedia.org/page/Vue.js</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#wikidataURI"/>
-        <NamedIndividual IRI="#VueJS"/>
-        <Literal>https://www.wikidata.org/wiki/Q24589705</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/numberOfEmployees"/>
@@ -1259,11 +1208,6 @@ https://www.wikidata.org/wiki/Q188860</Literal>
         <IRI>#Web_App</IRI>
         <Literal>a webapp is an application accessible online, from a website
 (e.g. a Software as a Service is a webapp)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#dbpediaURI</IRI>
-        <Literal>Lien vers la page (html) DBpedia du concept.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
